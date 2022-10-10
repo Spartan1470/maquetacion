@@ -22,12 +22,50 @@
 .botones ul li a{
     text-decoration: none;
     font-size: 20px;
-    color: red;
+    color: black;
     font-weight: bold;
 }
 .botones ul li a{
     color: white;
-    background-color: red;
+    background-color: gray;
     padding: 7px;
     border: 1px solid white;
+}
+.botones ul li a:hover{
+    color:black;
+    background-color: white;
+    border: 1px solid black;
+}
+.enlaces ul li a:hover{
+    color:white;
+    border-bottom: 2px solid white;
+    transition: all 1s;
+}
+.logo img:hover{
+    transition: all 1s;
+    transform: scale(1.2);
+}
+.enlaces ul li:nth-child(3) ul{
+    flex-direction: column;
+    position: absolute;
+    padding: 0;
+    display: none;
+}
+.enlaces ul li:nth-child(3) ul li a{
+    background-color: rgb(221, 217, 217);
+    padding: 3px 5px;
+}
+.enlaces ul li:nth-child(3) a:hover~ul{
+    display: flex;
+}
+.enlaces ul li:nth-child(3) label::before{
+    content:"+";
+    font-weight: bold;
+    font-size: 20px;
+}
+.enlaces ul li:nth-child(3) input{
+    display: none;
+}
+.enlaces ul li:nth-child(3) input:checked~ul{
+    display: flex;
 }
